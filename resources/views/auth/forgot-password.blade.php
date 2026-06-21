@@ -1,6 +1,6 @@
 @extends('layouts.auth')
 
-@section('title', 'Forgot Password - Erebus Marketplace Script')
+@section('title', 'Forgot Password - Erebus')
 @section('breadcrumb', 'Forgot Password')
 
 @section('content')
