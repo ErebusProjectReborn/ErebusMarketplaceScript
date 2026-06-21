@@ -2,7 +2,7 @@
   <h1>Erebus Marketplace Script</h1>
 </div>
 <div align="center">
-  <h1>Laravel 13 - Monero Only - Open Source Marketplace Script
+  <h1>Laravel 13 - PHP 8.5 - Monero Only - Open Source Marketplace Script
 </h1>
 </div>
 
@@ -51,8 +51,8 @@ All donations support active development and security improvements.
 
 <div align="center">
   <h1>Erebus Marketplace Script - Beta v2.0.0</h1>
-  <p><strong>Author:</strong> King Erebus</p>
-  <p><strong>Organization:</strong> The Erebus Project</p>
+  <p><strong>Author:</strong> Czar Erebus</p>
+  <p><strong>Organization:</strong> Erebus Labs Inc.</p>
   <p><strong>License:</strong> <a href="LICENSE.md">Erebus Marketplace Script License 2.0</a></p>
 </div>
 
@@ -60,7 +60,7 @@ All donations support active development and security improvements.
 <div align="center">
 <p>
 <strong>Erebus Marketplace Script - Tor Repository:</strong> 
-<a href="http://gitorxr6mcshgjq5j4e6u7oubewmautxh7amri4m7hxsvucixezykfad.onion/Erebus/Erebus" target="_blank" rel="noopener noreferrer">
+<a href="http://unavailable" target="_blank" rel="noopener noreferrer">
 http://unavailable
 </a>
 </p>
@@ -73,7 +73,7 @@ http://unavailable
 <div align="center">
 **Erebus Marketplace Script** is a modern, privacy-focused marketplace platform built with **PHP 8.5** and **Laravel 13**. Erebus Marketplace Script is a rewritten version of the lost Kabus Marketplace Script and provides a complete marketplace solution for anonymous commerce using Monero.
   
-  The purpose of creating Erebus Marketplace Script is to replace Kabus Marketplace Script and to provide safe and anonymous commerce software and ensure continued evolution of privacy-respecting marketplace technology. It is not created for any illegal purpose, nor does it encourage such activities. The platform facilitates the sale of legal products such as legally aquired electronics and jewlery online as anonymously and securely as possible.
+The purpose of creating Erebus Marketplace Script is to replace Kabus Marketplace Script and to provide safe and anonymous commerce software and ensure continued evolution of privacy-respecting marketplace technology. It is not created for any illegal purpose, nor does it encourage such activities. The platform facilitates the sale of legal products such as legally aquired electronics and jewlery online as anonymously and securely as possible.
 
 Built with a security-first approach, including hardened Laravel controllers, maximum CSP policies, and zero-JavaScript architecture for optimal Tor compatibility.
 </div>
@@ -192,27 +192,14 @@ For detailed installation instructions, see [INSTALLATION.md](docs/INSTALLATION.
     <h2>Architecture Overview</h2>
 </div>
 
-### Controllers + Middleware + More (Modernized for Laravel 13)
+### Feature Rich
 
-**Added Features**
+**Features List**
 - Private mirror system
-- Orders management panel - under construction
-- Harm reduction education system
-- Comprehensive logging and exception handling
-
-**Middleware**
-- TrustProxies.php as primary csp middleware
-- Proxy configuration for load balancers/Tor exits
-- 8 dedicated security header methods
-- Cache control for sensitive paths
-- 21 permissions restrictions
-
-**Other**
-- Updated category management to list properly parent cat - sub-cat - sub-sub-cat structure
-- Completely rewritten design
-- Floating sponsor banner added
-- New navbar setup, left and right bars removed
-
+- Extensive harm reduction education system
+- PoWeRebus proof of work captcha system
+- Mirror verification system
+- Much more
 ---
 
 <div align="center">
@@ -364,7 +351,7 @@ The creators and maintainers assume no liability for misuse, illegal activity, o
     <h2>Credits</h2>
 </div>
 
-**Original Developer:** King Erebus
+**Original Developer:** Czar Erebus
 
 **Contributors:** Community forks and improvements welcome
 
@@ -373,7 +360,7 @@ The creators and maintainers assume no liability for misuse, illegal activity, o
 ---
 
 <div align="center">
-  <h3>© 2026 The Erebus Development Team, All Rights Reserved.</h3>
-  <p><strong>Author:</strong> King Erebus</p>
+  <h3>© 2026 Erebus Labs Inc., All Rights Reserved.</h3>
+  <p><strong>Author:</strong> Czar Erebus</p>
   <p><a href="LICENSE.md">License Terms</a> | <a href="docs/SECURITY.md">Security Policy</a> | <a href="docs/INSTALLATION.md">Installation</a></p>
 </div>
