@@ -113,7 +113,7 @@
 
 <div class="admin-statistics-container">
     <div class="admin-statistics-header">
-        <h1 class="admin-statistics-title">Erebus Market Statistics</h1>
+        <h1 class="admin-statistics-title">Erebus Statistics</h1>
     </div>
     <div class="admin-statistics-grid">
         <!-- User Statistics Card -->
