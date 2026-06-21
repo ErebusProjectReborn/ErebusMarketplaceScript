@@ -716,7 +716,7 @@ UNAVAILABLE
 </div>
 
 <div class="footer-bottom">
-<p style="margin: 0;">© 2026 The Erebus Project. All rights reserved.</p>
+<p style="margin: 0;">© 2026 Erebus Labs Inc., All rights reserved.</p>
 </div>
 </footer>
 </body>
