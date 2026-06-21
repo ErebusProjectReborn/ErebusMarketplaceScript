@@ -639,7 +639,7 @@ sudo chmod 775 /var/www/Erebus/storage
 
 ---
 
-**© 2026 The Erebus Project, All Rights Reserved.**
+**© 2026 Erebus Labs Inc., All Rights Reserved.**
 
 **Installation Completed Successfully!**
 
