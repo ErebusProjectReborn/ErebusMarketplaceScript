@@ -251,7 +251,7 @@ The Erebus Marketplace Script is released under the **[Erebus Marketplace Script
 **Key License Terms:**
 - ✅ **Permitted**: Run your own marketplace, modify for operations, study code, contribute improvements
 - ❌ **Prohibited**: Commercial distribution, removing attribution, AI/ML training
-- ✅ **Attribution**: All derivative works must clearly credit "Erebus Marketplace Script by AnonymousUser9183"
+- ✅ **Attribution**: All derivative works must clearly credit "Erebus Marketplace Script by King Erebus"
 - ✅ **Enforcement**: Strong legal remedies for violations including DMCA and attorney fees
 
 For complete license details, see [LICENSE.md](LICENSE.md)
@@ -296,9 +296,9 @@ Contributions are welcome via **proper GitHub forks only**. To contribute:
 
 For bug reports, feature requests, or questions:
 
-- **GitHub Issues**: [github.com/AnonymousUser9183/Erebus/issues](https://github.com/AnonymousUser9183/market/issues)
+- **GitHub Issues**: [github.com/https://github.com/ErebusProjectReborn/ErebusMarketplaceScript/issues/issues](https://github.com/ErebusProjectReborn/ErebusMarketplaceScript/issues)
 - **Documentation**: [docs/](docs/)
-- **Email**: anonymoususer9183@protonmail.com (commercial inquiries)
+- **Email**: czarerebus@tutamail.com (commercial inquiries)
 
 ---
 
@@ -308,7 +308,7 @@ For bug reports, feature requests, or questions:
 
 For commercial licensing, custom development, or permissions beyond the open-source license terms:
 
-**Email:** anonymoususer9183@protonmail.com
+**Email:** czarerebus@tutamail.com
 
 Commercial licenses are available for entities wishing to distribute, commercialize, or use the Software beyond open-source scope.
 
