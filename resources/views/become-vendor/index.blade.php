@@ -228,7 +228,7 @@
 
 <div class="become-vendor-index-container">
     <div class="become-vendor-index-card">
-        <h1 class="become-vendor-index-title">Become a Vendor (Free for a Limited Time)</h1>
+        <h1 class="become-vendor-index-title">Become a Vendor</h1>
         
         <p class="become-vendor-index-text">
             Anyone can sell on {{ config('app.name') }}! The process involves submitting an application for review. Your application will be carefully reviewed by our administrators.
