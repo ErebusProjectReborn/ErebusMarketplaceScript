@@ -128,7 +128,7 @@
 
 <div class="a-v-panel-container">
     <div class="a-v-panel-card">
-        <h1 class="a-v-panel-title">Erebus Marketplace Script Admin Panel</h1>
+        <h1 class="a-v-panel-title">Erebus Admin Panel</h1>
         <p class="a-v-panel-welcome">Welcome to the Erebus Marketplace Script Admin Panel. Here you can manage various aspects of the marketplace and ensure its security and efficiency.</p>
         
         <div class="a-v-panel-grid">
