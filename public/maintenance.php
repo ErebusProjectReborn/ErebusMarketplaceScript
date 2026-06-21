@@ -1,7 +1,7 @@
 <!--
  * =========================================================================
- * © 2026 The Erebus Development Team
- * Author: AnonymousUser9183
+ * © 2026 Erebus Labs Inc.
+ * Author: Czar Erebus
  * =========================================================================
  * Erebus Marketplace Maintenance Page (Javascript Required for Timer)
  * =========================================================================
