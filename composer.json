@@ -1,9 +1,9 @@
 {
-    "name": "laravel/laravel",
+    "name": "ErebusLabs/MarketplaceScript",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
-    "license": "MIT",
+    "description": "Erebus Marketplace Script is a JavaScript-Free, privacy focused, Monero only marketplace script. Erebus Marketplace Script was developed as the successor of Kabus Marketplace Script by Sukunetsiz.",
+    "keywords": ["marketplace", "script", "privacy", "monero", "anonymous", "shopping", "deals"],
+    "license": "proprietary",
     "require": {
         "php": "^8.5",
         "comely-io/buffer-php": "^0.1.17",
