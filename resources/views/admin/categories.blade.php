@@ -289,7 +289,7 @@
 
 <div class="categories-index-container">
     <div class="categories-index-header">
-        <h1 class="categories-index-title">Erebus Marketplace Script Category Management</h1>
+        <h1 class="categories-index-title">Erebus Category Management</h1>
         <p style="color: var(--color-text-secondary); margin: var(--spacing-md) 0 0 0;">Manage Parent Categories, Child Categories, and Sub Categories</p>
     </div>
 
