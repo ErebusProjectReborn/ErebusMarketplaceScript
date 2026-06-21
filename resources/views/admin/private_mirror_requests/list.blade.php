@@ -157,7 +157,7 @@
 
 <div class="admin-container">
     <div class="admin-card">
-        <h1 class="admin-title">Private Mirror Requests</h1>
+        <h1 class="admin-title">Erebus Private Mirror Requests</h1>
 
         @if ($requests->count() > 0)
             <table class="mirror-table">
