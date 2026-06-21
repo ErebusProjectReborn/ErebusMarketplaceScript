@@ -120,7 +120,7 @@
 
 <div class="canary-index-container">
     <div class="canary-index-card">
-        <h2 class="canary-index-title">Erebus Marketplace Script Canary</h2>
+        <h2 class="canary-index-title">Erebus Canary</h2>
 
         <form method="POST" action="{{ route('admin.canary.post') }}" class="canary-index-form">
             @csrf
