@@ -1,7 +1,7 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-Erebus Marketplace Script Example Related Services Per OMG Guidelines
+Erebus Example Related Services Per OMG Guidelines
 
 1.) Erebus Email Script - Unreleased - http://blahblahblah1.onion/
 
