@@ -86,7 +86,7 @@ Obfuscation, minification, compilation, transpilation, or any form of code trans
 
 ### 9. AI/ML RESTRICTION
 
-Using this Software, or any substantial portion thereof, to train artificial intelligence, machine learning models, large language models, or automated code generation systems is **strictly prohibited** without explicit written permission from the Original Author (AnonymousUser9183).
+Using this Software, or any substantial portion thereof, to train artificial intelligence, machine learning models, large language models, or automated code generation systems is **strictly prohibited** without explicit written permission from the Original Author (King Erebus aka Czar Erebus).
 
 ### 10. SECURITY VULNERABILITY DISCLOSURE
 
@@ -306,10 +306,10 @@ This license supersedes any previous licensing terms and remains in effect until
 ### VERSION INFORMATION
 
 - **License Version:** 2.0
-- **Effective Date:** June 1, 2026
+- **Effective Date:** June 21, 2026
 - **Author:** King Erebus
-- **Organization:** The Erebus Project Dev Team
-- **Last Updated:** June 1, 2026, 00:00 PM UTC
+- **Organization:** The Erebus Project
+- **Last Updated:** June 21, 2026, 00:00 UTC
 
 ---
 
@@ -339,7 +339,7 @@ The deployment of The Erebus Marketplace Script onto any "darknet" intranet syst
 
 ---
 
-**© 2026 The Erebus Development Team, All Rights Reserved.**
+**© 2026 The Erebus Project, All Rights Reserved.**
 
 **Author: King Erebus**
 
