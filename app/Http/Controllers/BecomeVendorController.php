@@ -2,8 +2,8 @@
 
 /*
  * =========================================================================
- * © 2026 Erebus Development Team
- * Author: AnonymousUser9183
+ * © 2026 Erebus Labs Inc.
+ * Author: Czar Erebus
  * =========================================================================
  * Become Vendor Controller - Vendor Application & Payment
  * =========================================================================
