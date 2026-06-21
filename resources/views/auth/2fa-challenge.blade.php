@@ -1,6 +1,6 @@
 @extends('layouts.auth')
 
-@section('title', '2-Factor Authentication - Erebus Marketplace Script')
+@section('title', '2-Factor Authentication - Erebus')
 @section('breadcrumb', '2-Factor Authentication')
 
 @section('content')
