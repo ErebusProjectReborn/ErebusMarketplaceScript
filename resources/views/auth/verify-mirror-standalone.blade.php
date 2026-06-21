@@ -610,8 +610,8 @@
     <!-- Sponsorship Banner -->
     <div class="sponsor-banner">
         <a href="/">
-            <img src="{{ asset('images/logo_original.png') }}" alt="Erebus Marketplace Script">
-            <span class="sponsor-banner-text"><strong>Erebus Marketplace Script</strong> is an upgraded and rewritten version of the vanished Kabus Script by Sukunetsiz. We hope the dedicated developer is alright. Erebus Marketplace Script runs on the latest variant of Laravel 12 and is still under development.</span>
+            <img src="{{ asset('images/logo_original.png') }}" alt="Erebus">
+            <span class="sponsor-banner-text"><strong>Erebus</span>
         </a>
     </div>
 
@@ -620,8 +620,8 @@
         <div class="navbar-container">
             <div class="navbar-left">
                 <div class="navbar-logo-wrapper">
-                    <img src="{{ asset('images/logo_original.png') }}" alt="Erebus Marketplace Script" class="navbar-logo-img">
-                    <a href="{{ route('home') }}" class="navbar-logo">Erebus Marketplace Script</a>
+                    <img src="{{ asset('images/logo_original.png') }}" alt="Erebus" class="navbar-logo-img">
+                    <a href="{{ route('home') }}" class="navbar-logo">Erebus</a>
                 </div>
             </div>
 
@@ -649,7 +649,7 @@
     <main>
         <div class="verify-mirror-page">
             <div class="verify-mirror-header">
-                <h1>🔐 Verify Erebus Marketplace Script Mirrors</h1>
+                <h1>🔐 Verify Erebus Mirror</h1>
                 <p>Verify the authenticity of our official mirrors using the PGP signed message below.</p>
             </div>
 
@@ -660,10 +660,10 @@
             <div class="pgp-message-box">-----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-Erebus Marketplace Script - Mirror Links
+Erebus - Mirror Links
 Date: xxxx-xx-xx
 
-The following are the mirrors of Erebus Marketplace Script
+The following are the mirrors of Erebus
 
 OFFICIAL MIRRORS:
 Primary Onion/Mirror Distributor: https://www.yourmirrordistrubutorontheclearnet.com/
@@ -689,7 +689,7 @@ PGPSIGNATUREHERE
 
                 <div class="mirror-item">
                     <strong>Market Links</strong>
-                    <p style="font-size: 12px; color: #666; margin: 6px 0 0 0;">Erebus Marketplace Script has a unique form of OpSec requiring we do not publicly post our Market URL's, the only way to get a market link is through the gateway. Mirror links are deleted and rotated once every week.</p>
+                    <p style="font-size: 12px; color: #666; margin: 6px 0 0 0;">Erebus has a unique form of OpSec requiring we do not publicly post our Market URL's, the only way to get a market link is through the gateway. Mirror links are deleted and rotated once every week.</p>
                 </div>
             </div>
 
@@ -760,7 +760,7 @@ PGPSIGNATUREHERE
         </div>
 
         <div class="footer-bottom">
-            <p style="margin: 0;">© 2026 Erebus Marketplace Script. All rights reserved.</p>
+            <p style="margin: 0;">© 2026 The Erebus Project. All rights reserved.</p>
         </div>
     </footer>
 </body>

@@ -1,8 +1,8 @@
-# EREBUS MARKETPLACE SCRIPT - SOFTWARE LICENSE
+# EREBUS MARKETPLACE SCRIPT - SOFTWARE LICENSE v2.0.0
 
-Copyright (c) 2026 The Erebus Development Team
+Copyright (c) 2026 The Erebus Project
 
-Author: AnonymousUser9183
+Author: King Erebus
 
 ---
 
@@ -10,7 +10,7 @@ Author: AnonymousUser9183
 
 **"Software"** refers to the Erebus Marketplace Script/Application, including all source code, documentation, configuration files, assets, database schemas, middleware, controllers, and associated materials.
 
-**"Original Author"** refers to AnonymousUser9183, the creator and copyright holder of the Software on behalf of The Erebus Development Team.
+**"Original Author"** refers to King Erebus, the creator and copyright holder of the Software on behalf of The Erebus Development Team.
 
 **"You"** refers to any individual or entity that obtains, uses, modifies, or distributes the Software.
 
@@ -22,7 +22,7 @@ Author: AnonymousUser9183
 
 **"Substantial Portion"** means any portion of the Software containing 15 or more consecutive lines of code, any functionally significant component regardless of size, or any complete module/controller.
 
-**"The Erebus Development Team"** refers to the organization that owns and maintains this Software.
+**"The Erebus Project"** refers to the organization that owns and maintains this Software.
 
 ---
 
@@ -52,7 +52,7 @@ You must retain all copyright notices, this license text, and attribution statem
 
 - All source files must retain the original copyright header
 - All documentation must include original author attribution
-- Any public materials must credit "Erebus Marketplace Script by The Erebus Development Team"
+- Any public materials must credit "Erebus Marketplace Script by The Erebus Project Dev Team"
 
 ### 2. PROPER FORKING
 
@@ -62,7 +62,7 @@ Any public sharing of the Software on GitHub, GitLab, Gitea, or similar platform
 
 In any public documentation, README files, about pages, user-facing materials, or interface elements, You must clearly and prominently state:
 
-"Based on Erebus Marketplace Script by AnonymousUser9183 (github.com/AnonymousUser9183/Erebus)"
+"Based on Erebus Marketplace Script by King Erebus (github.com/KingErebus)"
 
 ### 4. SOURCE CODE DISCLOSURE
 
@@ -74,7 +74,7 @@ Any derivative works must be licensed under similar terms to this license.
 
 ### 6. INTERFACE ATTRIBUTION
 
-You must retain any "Powered by Erebus Marketplace Script" or similar attribution notices in the software interface where visible to end users or administrators.
+You must retain any "Powered by Erebus" or similar attribution notices in the software interface where visible to end users or administrators.
 
 ### 7. SUBSTANTIAL PORTIONS
 
@@ -147,7 +147,7 @@ You may not create, distribute, or assist in creating "nulled," cracked, or lice
 
 ### 10. TRADEMARK VIOLATION
 
-You may not use "Erebus" "Erebus Market," "AnonymousUser9183," or associated trademarks without permission. You may only reference them for attribution purposes.
+You may not use "Erebus" "Erebus Market," "King Erebus" or associated trademarks without permission. You may only reference them for attribution purposes.
 
 ---
 
@@ -264,7 +264,7 @@ THE ORIGINAL AUTHOR MAKES NO WARRANTIES REGARDING:
 
 ## LIMITATION OF LIABILITY
 
-IN NO EVENT SHALL THE ORIGINAL AUTHOR, ANONYMOUSUSER9183, THE EREBUS DEVELOPMENT TEAM OR ANY CONTRIBUTORS BE LIABLE FOR ANY DAMAGES, INCLUDING:
+IN NO EVENT SHALL THE ORIGINAL AUTHOR, KING EREBUS, THE EREBUS PROJECT DEV TEAM OR ANY CONTRIBUTORS BE LIABLE FOR ANY DAMAGES, INCLUDING:
 
 - Direct, indirect, incidental, special, exemplary, or consequential damages
 - Loss of profits, revenue, data, or business interruption
@@ -287,9 +287,9 @@ This license shall be governed by and construed in accordance with applicable co
 
 For commercial licensing, distribution rights, permissions beyond this license, or other inquiries:
 
-**Email:** anonymoususer9183@protonmail.com
+**Email:** czarerebus@protonmail.com
 
-**GitHub:** github.com/AnonymousUser9183/
+**GitHub:** github.com/KingErebus/
 
 **Status:** Commercial licenses are available for entities wishing to use, distribute, sell, or commercialize the Software beyond the scope of this license.
 
@@ -297,7 +297,7 @@ For commercial licensing, distribution rights, permissions beyond this license, 
 
 ## LICENSE VALIDITY
 
-This license is effective as of April 1, 2026, and applies to all previous, current, and future versions of the Erebus Marketplace Script software.
+This license is effective as of June 1, 2026, and applies to all previous, current, and future versions of the Erebus Marketplace Script software.
 
 This license supersedes any previous licensing terms and remains in effect until terminated according to its terms.
 
@@ -305,11 +305,11 @@ This license supersedes any previous licensing terms and remains in effect until
 
 ### VERSION INFORMATION
 
-- **License Version:** 1.1
-- **Effective Date:** April 1, 2026
-- **Author:** AnonymousUser9183
-- **Organization:** The Erebus Development Team
-- **Last Updated:** April 1, 2026, 10:20 PM UTC
+- **License Version:** 2.0
+- **Effective Date:** June 1, 2026
+- **Author:** King Erebus
+- **Organization:** The Erebus Project Dev Team
+- **Last Updated:** June 1, 2026, 00:00 PM UTC
 
 ---
 
@@ -341,6 +341,6 @@ The deployment of The Erebus Marketplace Script onto any "darknet" intranet syst
 
 **© 2026 The Erebus Development Team, All Rights Reserved.**
 
-**Author: AnonymousUser9183**
+**Author: King Erebus**
 
 **This license is binding and enforceable.**

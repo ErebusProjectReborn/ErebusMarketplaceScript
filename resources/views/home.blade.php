@@ -837,9 +837,9 @@
 
     <!-- Welcome Section -->
     <div class="welcome-section">
-        <h1 class="welcome-title">Erebus Marketplace Script</h1>
+        <h1 class="welcome-title">Welcome to Erebus</h1>
         <p class="welcome-subtitle">
-            Erebus Marketplace Script is an updated and rewritten version of the now vanished Kabus Marketplace and it's dedicated creator Sukunetsiz, we hope he is okay. This updated version runs on the latest Laravel 12 which was upgraded from Laravel 11. The design has been completely rewritten and I have added many cool features. This script is still under development, and I will do my best to maintain the repository for this script both on GitHub and on an private tor domain which supports git commands.
+            Erebus is the latest Javascript-less Monero-only marketplace script and the successor of Kabus. Erebus runs on the latest variant of Laravel 13 and PHP 8.5. Erebus will be actively maintained for the foreseeable future.
         </p>
 
         <!-- Features Grid -->

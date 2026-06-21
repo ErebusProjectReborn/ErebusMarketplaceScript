@@ -248,7 +248,7 @@
 <div class="auth-register-container">
     <div class="auth-register-card">
         <h1 class="auth-register-title">CREATE ACCOUNT</h1>
-        <p class="auth-register-description">Join Erebus Marketplace Script securely</p>
+        <p class="auth-register-description">Join Erebus</p>
 
         @if ($errors->any())
             <div class="auth-register-error-message">

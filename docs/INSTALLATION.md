@@ -1,6 +1,6 @@
 # Installation Guide for Erebus Marketplace Script
 
-## Comprehensive Setup Guide for Erebus Marketplace Script Beta 1.0
+## Comprehensive Setup Guide for Erebus Marketplace Script Beta v2.0.0
 
 This comprehensive guide will walk you through the installation process of Erebus Marketplace Script on your system.
 
@@ -33,16 +33,16 @@ sudo apt upgrade -y
 
 ## Installing Required Dependencies
 
-### PHP 8.3 Installation
+### PHP 8.5 Installation
 
-First, we'll install PHP 8.3 along with essential extensions required for the marketplace:
+First, we'll install PHP 8.5 along with essential extensions required for the marketplace:
 
 ```bash
 sudo add-apt-repository ppa:ondrej/php -y
 sudo apt update
-sudo apt install -y php8.3-fpm php8.3-mysql php8.3-curl php8.3-gd php8.3-mbstring \
-php8.3-xml php8.3-zip php8.3-bcmath php8.3-gnupg php8.3-intl php8.3-readline \
-php8.3-common php8.3-cli php8.3-gmp php8.3-sodium
+sudo apt install -y php8.5-fpm php8.5-mysql php8.5-curl php8.5-gd php8.5-mbstring \
+php8.5-xml php8.5-zip php8.5-bcmath php8.5-gnupg php8.5-intl php8.5-readline \
+php8.5-common php8.5-cli php8.5-gmp php8.5-sodium
 ```
 
 Install unzip (required for Composer package extraction):
@@ -135,9 +135,9 @@ nginx -v
 Expected output (versions may vary):
 
 ```
-PHP 8.3.15 (cli) (built: Dec 11 2024 14:30:25) (ZTS)
-Composer version 2.8.4 2024-12-11 11:57:47
-git version 2.34.1
+PHP 8.5.x
+Composer version 2.x.x
+git version 2.xx.x
 mysql  Ver 8.0.40-0ubuntu0.22.04.1 for Linux on x86_64
 nginx version: nginx/1.18.0 (Ubuntu)
 ```
@@ -305,7 +305,7 @@ Save the file by pressing **CTRL+X**, then **'y'** to confirm, and finally **Ent
 Install all required packages using Composer:
 
 ```bash
-sudo composer install --no-dev --optimize-autoloader
+sudo composer install
 ```
 
 Generate the application encryption key:
@@ -317,13 +317,13 @@ sudo php artisan key:generate
 Create database tables through migrations:
 
 ```bash
-sudo php artisan migrate --force
+sudo php artisan migrate
 ```
 
 Optionally seed the database with sample data:
 
 ```bash
-sudo php artisan db:seed (Database Seeder currently broken, see issues)
+sudo php artisan db:seed
 ```
 
 ### File Permissions
@@ -376,7 +376,7 @@ server {
     location ~ \.php$ {
         try_files $uri =404;
         fastcgi_split_path_info ^(.+\.php)(/.+)$;
-        fastcgi_pass unix:/run/php/php8.3-fpm.sock;
+        fastcgi_pass unix:/run/php/php8.5-fpm.sock;
         fastcgi_index index.php;
         include fastcgi_params;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
@@ -635,11 +635,11 @@ sudo chmod 775 /var/www/Erebus/storage
 - **Installation Issues**: Check [docs/INSTALLATION.md](docs/INSTALLATION.md)
 - **Security Questions**: See [docs/SECURITY.md](docs/SECURITY.md)
 - **Monero Setup**: See [docs/CONNECTING-MONERO-RPC.md](docs/CONNECTING-MONERO-RPC.md)
-- **Email Support**: anonymoususer9183@protonmail.com
+- **Email Support**: czarerebus@tutamail.com
 
 ---
 
-**© 2026 The Erebus Development Team, All Rights Reserved.**
+**© 2026 The Erebus Project, All Rights Reserved.**
 
 **Installation Completed Successfully!**
 

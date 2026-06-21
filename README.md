@@ -2,15 +2,15 @@
   <h1>Erebus Marketplace Script</h1>
 </div>
 <div align="center">
-  <h1>Laravel 12 - Monero Only - Open Source Marketplace Script
+  <h1>Laravel 13 - Monero Only - Open Source Marketplace Script
 </h1>
 </div>
 
 <div align="center">
   <p>
     <strong>Erebus Marketplace Script Live Preview:</strong> 
-    <a href="http://root.nettrek.ru" target="_blank" rel="noopener noreferrer">
-      http://root.nettrek.ru
+    <a href="http://unavailable" target="_blank" rel="noopener noreferrer">
+      http://unavailable
     </a>
   </p>
 </div>
@@ -23,19 +23,19 @@ Support continued development through Monero donations:
 
 **CashApp (USD)**
 ```
-$AnonymousUser9183
+Currently Down
 ```
 **Monero (XMR)**
 ```
-45umQEDfN52gzHMpUxkK8TUAeZjFgzb2VDmZArgx4iTHeGY4gb2KrtqZC691Ff9pHaJeUFF1oBZAGQHTHzps7icg5cdptMG
+Currently Down
 ```
 **Bitcoin (BTC)**
 ```
-bc1qwnpu53a233u864z5tc66v4454tlamg3ljvcxa0
+Currently Down
 ```
 **Litecoin (LTC)**
 ```
-ltc1qm0n4fqdhc6nz6ed9vafjqdx86a4pqj3t5ed7mc
+Currently Down
 ```
 All donations support active development and security improvements.
 </div>
@@ -50,10 +50,10 @@ All donations support active development and security improvements.
 </div>
 
 <div align="center">
-  <h1>Erebus Marketplace Script</h1>
-  <p><strong>Author:</strong> AnonymousUser9183</p>
-  <p><strong>Organization:</strong> The Erebus Development Team</p>
-  <p><strong>License:</strong> <a href="LICENSE.md">Erebus Marketplace Script License 1.0</a></p>
+  <h1>Erebus Marketplace Script - Beta v2.0.0</h1>
+  <p><strong>Author:</strong> King Erebus</p>
+  <p><strong>Organization:</strong> The Erebus Project</p>
+  <p><strong>License:</strong> <a href="LICENSE.md">Erebus Marketplace Script License 2.0</a></p>
 </div>
 
 ---
@@ -61,7 +61,7 @@ All donations support active development and security improvements.
 <p>
 <strong>Erebus Marketplace Script - Tor Repository:</strong> 
 <a href="http://gitorxr6mcshgjq5j4e6u7oubewmautxh7amri4m7hxsvucixezykfad.onion/Erebus/Erebus" target="_blank" rel="noopener noreferrer">
-http://gitorxr6mcshgjq5j4e6u7oubewmautxh7amri4m7hxsvucixezykfad.onion/Erebus/Erebus
+http://unavailable
 </a>
 </p>
 </div>
@@ -71,7 +71,7 @@ http://gitorxr6mcshgjq5j4e6u7oubewmautxh7amri4m7hxsvucixezykfad.onion/Erebus/Ere
 </div>
 
 <div align="center">
-**Erebus Marketplace Script** is a modern, privacy-focused marketplace platform built with **PHP 8.3** and **Laravel 12.11.1**. Erebus Marketplace Script is a rewritten version of the lost Kabus Marketplace Script and provides a complete marketplace solution for anonymous commerce using Monero.
+**Erebus Marketplace Script** is a modern, privacy-focused marketplace platform built with **PHP 8.5** and **Laravel 13**. Erebus Marketplace Script is a rewritten version of the lost Kabus Marketplace Script and provides a complete marketplace solution for anonymous commerce using Monero.
   
   The purpose of creating Erebus Marketplace Script is to replace Kabus Marketplace Script and to provide safe and anonymous commerce software and ensure continued evolution of privacy-respecting marketplace technology. It is not created for any illegal purpose, nor does it encourage such activities. The platform facilitates the sale of legal products such as legally aquired electronics and jewlery online as anonymously and securely as possible.
 
@@ -139,8 +139,8 @@ Built with a security-first approach, including hardened Laravel controllers, ma
 
 | Component | Version | Purpose |
 |-----------|---------|---------|
-| **PHP** | 8.3+ | Server-side language |
-| **Laravel** | 12.11.1 | Web framework |
+| **PHP** | 8.5+ | Server-side language |
+| **Laravel** | 13 | Web framework |
 | **Monero** | Latest | Cryptocurrency integration |
 | **MySQL** | 8.0+ | Database |
 | **Cryptonote-PHP** | Latest | Address validation |
@@ -155,8 +155,8 @@ Built with a security-first approach, including hardened Laravel controllers, ma
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/AnonymousUser9183/Erebus.git
-   cd Erebus
+   git clone https://github.com/ErebusProjectReborn/ErebusMarketplaceScript.git
+   cd ErebusMarketplaceScript
    ```
 
 2. **Install dependencies**
@@ -192,7 +192,7 @@ For detailed installation instructions, see [INSTALLATION.md](docs/INSTALLATION.
     <h2>Architecture Overview</h2>
 </div>
 
-### Controllers + Middleware + More (Modernized for Laravel 12.11.1)
+### Controllers + Middleware + More (Modernized for Laravel 13)
 
 **Added Features**
 - Private mirror system
@@ -246,7 +246,7 @@ For detailed installation instructions, see [INSTALLATION.md](docs/INSTALLATION.
     <h2>License & Attribution</h2>
 </div>
 
-The Erebus Marketplace Script is released under the **[Erebus Marketplace Script License 1.0](LICENSE.md)**
+The Erebus Marketplace Script is released under the **[Erebus Marketplace Script License 2.0](LICENSE.md)**
 
 **Key License Terms:**
 - ✅ **Permitted**: Run your own marketplace, modify for operations, study code, contribute improvements
@@ -364,7 +364,7 @@ The creators and maintainers assume no liability for misuse, illegal activity, o
     <h2>Credits</h2>
 </div>
 
-**Original Developer:** AnonymousUser9183
+**Original Developer:** King Erebus
 
 **Contributors:** Community forks and improvements welcome
 
@@ -374,6 +374,6 @@ The creators and maintainers assume no liability for misuse, illegal activity, o
 
 <div align="center">
   <h3>© 2026 The Erebus Development Team, All Rights Reserved.</h3>
-  <p><strong>Author:</strong> AnonymousUser9183</p>
+  <p><strong>Author:</strong> King Erebus</p>
   <p><a href="LICENSE.md">License Terms</a> | <a href="docs/SECURITY.md">Security Policy</a> | <a href="docs/INSTALLATION.md">Installation</a></p>
 </div>

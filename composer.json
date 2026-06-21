@@ -5,15 +5,14 @@
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
-        "php": "^8.2",
+        "php": "^8.5",
         "comely-io/buffer-php": "^0.1.17",
         "endroid/qr-code": "^5.1",
         "ezyang/htmlpurifier": "^4.17",
         "furqansiddiqui/bip39-mnemonic-php": "^0.1.7",
         "guzzlehttp/guzzle": "^7.9.3",
         "intervention/image-laravel": "^1.3",
-        "laravel/framework": "^13.3.0",
-        "laravel/tinker": "^2.9",
+        "laravel/framework": "^13.16.1",
         "mobicms/captcha": "^4.0",
         "monero-integrations/monerophp": "dev-master",
         "spatie/laravel-csp": "^3.22"
@@ -25,6 +24,7 @@
         "fakerphp/faker": "^1.23",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",
+        "laravel/tinker": "*",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.1",
         "phpunit/phpunit": "^11.0.1"

@@ -245,7 +245,7 @@
 <div class="auth-login-container">
     <div class="auth-login-card">
         <h1 class="auth-login-title">LOGIN</h1>
-        <p class="auth-login-description">Access your Erebus Marketplace Script account</p>
+        <p class="auth-login-description">Access your Erebus account</p>
 
         @if ($errors->any())
             <div class="auth-login-error-message">

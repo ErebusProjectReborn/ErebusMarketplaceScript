@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>@yield('title', 'Erebus Marketplace Script')</title>
+<title>@yield('title', 'Erebus')</title>
 <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
 <style>
 * {
@@ -619,8 +619,8 @@ grid-template-columns: 1fr;
 <!-- Sponsorship Banner -->
 <div class="sponsor-banner">
 <a href="/">
-<img src="{{ asset('images/logo.png') }}" alt="Erebus Marketplace Script">
-<span class="sponsor-banner-text">Welcome to <strong>Erebus Marketplace Script</strong> - A rewritten and upgraded version of Kabus Marketplace Script by Sukunetsiz. Running on the latest variant of Laravel 12 updated from Laravel 11 and a completely rewritten design.</span>
+<img src="{{ asset('images/logo.png') }}" alt="Erebus">
+<span class="sponsor-banner-text">Welcome to <strong>Erebus</strong> - The latest privacy focused marketplace script, running on the latest variant of Laravel 13 and PHP 8.5.</span>
 </a>
 </div>
 
@@ -629,8 +629,8 @@ grid-template-columns: 1fr;
 <div class="navbar-container">
 <div class="navbar-left">
 <div class="navbar-logo-wrapper">
-<img src="{{ asset('images/logo.png') }}" alt="Erebus Marketplace Script" class="navbar-logo-img">
-<a href="{{ route('login-home') }}" class="navbar-logo">Erebus Marketplace Script</a>
+<img src="{{ asset('images/logo.png') }}" alt="Erebus" class="navbar-logo-img">
+<a href="{{ route('login-home') }}" class="navbar-logo">Erebus</a>
 </div>
 </div>
 
@@ -716,7 +716,7 @@ UNAVAILABLE
 </div>
 
 <div class="footer-bottom">
-<p style="margin: 0;">© 2025 Erebus Marketplace Script Market. All rights reserved.</p>
+<p style="margin: 0;">© 2026 The Erebus Project. All rights reserved.</p>
 </div>
 </footer>
 </body>
