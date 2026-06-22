@@ -2,8 +2,8 @@
 
 /*
  * =========================================================================
- * © 2026 Erebus Development Team
- * Author: AnonymousUser9183
+ * © 2026 Erebus Labs Inc.
+ * Author: Czar Erebus
  * =========================================================================
  * Support Controller - Ticket Management with PoW Verification
  * =========================================================================
