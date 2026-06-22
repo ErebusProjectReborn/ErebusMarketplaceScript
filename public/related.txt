@@ -1,17 +1,17 @@
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA512
+Hash: SHA256
 
-Erebus Example Related Services Per OMG Guidelines
+Example Related.txt Per OMG Guidelines Version: CE-OMG-2.0.0
 
-1.) Erebus Email Script - Unreleased - http://blahblahblah1.onion/
+1.) Erebus Email - http://blahblahblah1.onion/
 
-2.) Erebus Privacy Crypto - Unreleased - http://blahblahblah2.onion/
+2.) Erebus Crypto Exchange - http://blahblahblah2.onion/
 
-3.) Erebus Crypto Exchange - Unreleased - http://blahblahblah3.onion/
+3.) Erebus Crypto Mixer - http://blahblahblah3.onion/
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQSl4wF+0SaYawEGSk9TNudFnqDnAQUCac625gAKCRBTNudFnqDn
-AYPfAQCyiR+QN5vfnsjAwBpU5SFFrO5ERrizFyZ2uS5BTfXn3QD/V6YeHaZ7E8st
-DPaBwZJqp2LB3N2AEMAjcVfmlBPo1w0=
-=cTKQ
+iIUEARYIAC0mHEN6YXIgRXJlYnVzIDxjemFyZXJlYnVzQHR1dGFtYWlsLmNvbT4F
+Amo5abcACgkQpWoh6jZ6FVoFSAD/U8UwMhpA3FOmEBtUQ24Ko6d6BDEkX3guOMcC
+HfYDJlYA/RE5T4bZIjjlNOxMIpu1jePCpqpeo46Tp0EuI/Y4gPsD
+=sAKE
 -----END PGP SIGNATURE-----
