@@ -130,7 +130,7 @@ class CaptchaController extends Controller
     }
 
     /**
-     * Generate a NoctiPoW token and store in session
+     * Generate a PoWeRebus token and store in session
      * Format: nocti_[9_random_chars]_[timestamp]
      *
      * @return string
