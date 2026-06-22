@@ -27,15 +27,15 @@ Currently Down
 ```
 **Monero (XMR)**
 ```
-Currently Down
+45VqKgv9ffEU2ybKG3zdJHicsVR4ZWT3D7keDVYmzCWXXyFRKERL1NNRMLs3yBeKazXvChGDqh59aiWWVkRJD2VE5UnqxjR
 ```
 **Bitcoin (BTC)**
 ```
-Currently Down
+bc1qaxmvt3n03elxsn7luv68yzg3u5rmgq293y5l9n
 ```
 **Litecoin (LTC)**
 ```
-Currently Down
+ltc1qg7m54s8rktl6eatdv66df9sh54yctqu65pe7ey
 ```
 All donations support active development and security improvements.
 </div>
