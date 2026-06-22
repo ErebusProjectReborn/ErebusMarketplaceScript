@@ -2,8 +2,8 @@
 
 /*
  * =========================================================================
- * © 2026 Erebus Development Team
- * Author: AnonymousUser9183
+ * © 2026 Erebus Labs Inc.
+ * Author: Czar Erebus
  * =========================================================================
  * Rules Controller - Site Rules & Policy Display with Pagination
  * =========================================================================
