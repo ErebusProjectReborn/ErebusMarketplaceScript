@@ -2,10 +2,10 @@
 
 /*
  * =========================================================================
- * © 2026 The Erebus Development Team
- * Author: AnonymousUser9183
+ * © 2026 Erebus Labs Inc.
+ * Author: Czar Erebus
  * =========================================================================
- * Erebus Marketplace Script Configuration File
+ * Erebus Marketplace Configuration File
  * =========================================================================
  */
 
