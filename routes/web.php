@@ -3,10 +3,10 @@ use App\Http\Controllers\PrivateFileController;
 
 /*
  * =========================================================================
- * © 2026 The Erebus Development Team
- * Author: AnonymousUser9183
+ * © 2026 Erebus Labs Inc.
+ * Author: Czar Erebus
  * =========================================================================
- * Erebus Marketplace Script Laravel 12 Web Routes
+ * Erebus Marketplace Script Laravel 13 Web Routes
  * =========================================================================
  */
 
