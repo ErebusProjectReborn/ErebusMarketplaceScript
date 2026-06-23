@@ -2,10 +2,10 @@
 
 /*
  * =========================================================================
- * © 2026 The Erebus Development Team
- * Author: AnonymousUser9183
+ * © 2026 Erebus Labs Inc.
+ * Author: Czar Erebus
  * =========================================================================
- * Laravel 12 Mail Configuration File
+ * Laravel 13 Mail Configuration File
  * =========================================================================
  */
 
