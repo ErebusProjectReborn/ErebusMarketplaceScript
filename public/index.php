@@ -5,7 +5,7 @@
  * © 2026 Erebus Labs Inc.
  * Author: Czar Erebus
  * =========================================================================
- * Laravel 12 "index.php" Initialization File
+ * Laravel 13 "index.php" Initialization File
  * =========================================================================
  */
 
