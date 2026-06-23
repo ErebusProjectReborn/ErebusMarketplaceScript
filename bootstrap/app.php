@@ -2,11 +2,10 @@
 
 /*
  * =========================================================================
- * © 2026 The Erebus Development Team
- * Author: AnonymousUser9183
+ * © 2026 Erebus Labs Inc.
+ * Author: Czar Erebus
  * =========================================================================
- * Laravel 12 Bootstrap Configuration with Middleware & Exceptions
- * Kernel.php responsibilities are now here in Laravel 12
+ * Laravel 13 Bootstrap Configuration with Middleware & Exceptions
  * =========================================================================
  */
 
