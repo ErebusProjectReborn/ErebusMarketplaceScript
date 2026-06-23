@@ -2,10 +2,10 @@
 
 /*
  * =========================================================================
- * © 2026 The Erebus Development Team
- * Author: AnonymousUser9183
+ * © 2026 Erebus Labs Inc.
+ * Author: Czar Erebus
  * =========================================================================
- * Laravel 12 Configuration File
+ * Laravel 13 App Configuration File
  * =========================================================================
  */
 
@@ -22,7 +22,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Erebus Marketplace Script'),
+    'name' => env('APP_NAME', 'Erebus'),
 
     /*
     |--------------------------------------------------------------------------
