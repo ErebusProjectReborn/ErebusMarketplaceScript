@@ -1,209 +1,8 @@
 @extends('layouts.app')
+<link rel="stylesheet" href="{{ asset('css/vendor.css') }}">
 @section('content')
 
-<style>
-    :root {
-        --color-accent: #208088;
-        --color-accent-light: #32b8c6;
-        --color-text-primary: #134252;
-        --color-text-secondary: #62746e;
-        --color-card-bg: #ffffff;
-        --color-border: #d4d8d6;
-        --color-input-bg: #f5f7f6;
-        --spacing-md: 12px;
-        --spacing-lg: 16px;
-        --spacing-xl: 24px;
-        --radius-base: 8px;
-        --radius-lg: 12px;
-        --color-success: #4caf50;
-        --color-warning: #ffc107;
-        --color-error: #f44336;
-        --color-info: #2196f3;
-    }
 
-    .product-create-container {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: var(--spacing-xl);
-    }
-
-    .product-create-card {
-        background: var(--color-card-bg);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-lg);
-        padding: var(--spacing-xl);
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    }
-
-    .product-create-title {
-        font-size: 24px;
-        font-weight: 600;
-        color: var(--color-text-primary);
-        margin: 0 0 var(--spacing-xl) 0;
-    }
-
-    .product-create-section {
-        margin-bottom: var(--spacing-xl);
-        padding-bottom: var(--spacing-xl);
-        border-bottom: 1px solid var(--color-border);
-    }
-
-    .product-create-section:last-child {
-        border-bottom: none;
-    }
-
-    .product-create-section-title {
-        font-size: 16px;
-        font-weight: 600;
-        color: var(--color-text-primary);
-        margin: 0 0 var(--spacing-lg) 0;
-    }
-
-    .product-create-field {
-        margin-bottom: var(--spacing-lg);
-    }
-
-    .product-create-label {
-        display: block;
-        font-size: 14px;
-        font-weight: 500;
-        color: var(--color-text-primary);
-        margin-bottom: var(--spacing-md);
-    }
-
-    .product-create-input,
-    .product-create-select,
-    .product-create-textarea {
-        width: 100%;
-        padding: var(--spacing-md);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-base);
-        font-family: inherit;
-        font-size: 14px;
-        color: var(--color-text-primary);
-        background: var(--color-input-bg);
-        transition: all 0.2s ease;
-        box-sizing: border-box;
-    }
-
-    .product-create-input:focus,
-    .product-create-select:focus,
-    .product-create-textarea:focus {
-        outline: none;
-        border-color: var(--color-accent);
-        background: var(--color-card-bg);
-        box-shadow: 0 0 0 3px rgba(32, 128, 136, 0.1);
-    }
-
-    .product-create-textarea {
-        resize: vertical;
-        min-height: 120px;
-    }
-
-    .product-create-help-text {
-        font-size: 12px;
-        color: var(--color-text-secondary);
-        margin-top: var(--spacing-md);
-    }
-
-    .product-create-price-wrapper {
-        display: flex;
-        align-items: center;
-        gap: var(--spacing-md);
-    }
-
-    .product-create-price-symbol {
-        background: var(--color-input-bg);
-        padding: var(--spacing-md);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-base);
-        font-weight: 600;
-        color: var(--color-text-primary);
-        min-width: 40px;
-        text-align: center;
-    }
-
-    .product-create-price-input {
-        flex: 1;
-    }
-
-    .product-create-submit-btn {
-        background: var(--color-accent);
-        color: white;
-        padding: 12px 24px;
-        border: none;
-        border-radius: var(--radius-base);
-        font-size: 14px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .product-create-submit-btn:hover {
-        background: var(--color-accent-light);
-        box-shadow: 0 4px 12px rgba(32, 128, 136, 0.2);
-    }
-
-    .product-create-submit-btn:active {
-        transform: scale(0.98);
-    }
-
-    .product-create-file-btn {
-        display: inline-block !important;
-        width: auto !important;
-        margin-bottom: var(--spacing-md);
-    }
-
-    .product-option-card {
-        background: var(--color-input-bg);
-        padding: var(--spacing-lg);
-        border-radius: var(--radius-base);
-        margin-bottom: var(--spacing-lg);
-        border: 1px solid var(--color-border);
-    }
-
-    .product-option-title {
-        font-size: 14px;
-        font-weight: 600;
-        color: var(--color-text-primary);
-        margin: 0 0 var(--spacing-md) 0;
-    }
-
-    .hidden {
-        display: none;
-    }
-
-    @media (max-width: 768px) {
-        .product-create-container {
-            padding: var(--spacing-lg);
-        }
-
-        .product-create-card {
-            padding: var(--spacing-lg);
-        }
-
-        .product-create-title {
-            font-size: 20px;
-        }
-
-        .product-create-section {
-            border-bottom: none;
-            padding-bottom: var(--spacing-lg);
-            margin-bottom: var(--spacing-lg);
-        }
-
-        .product-create-price-wrapper {
-            flex-direction: column;
-            align-items: stretch;
-        }
-
-        .product-create-price-symbol {
-            min-width: auto;
-        }
-    }
-</style>
 
 <div class="product-create-container">
     <div class="product-create-card">
@@ -307,7 +106,7 @@
                         @endforeach
                     </select>
                     @error('ships_from')
-                        <p class="product-create-help-text" style="color: var(--color-error);">{{ $message }}</p>
+                        <p class="product-create-help-text inline-fc23f87a8c">{{ $message }}</p>
                     @enderror
                 </div>
 
@@ -322,7 +121,7 @@
                         @endforeach
                     </select>
                     @error('ships_to')
-                        <p class="product-create-help-text" style="color: var(--color-error);">{{ $message }}</p>
+                        <p class="product-create-help-text inline-fc23f87a8c">{{ $message }}</p>
                     @enderror
                 </div>
             </div>
@@ -348,7 +147,7 @@
                     </div>
                 @endfor
                 @error('delivery_options')
-                    <p class="product-create-help-text" style="color: var(--color-error);">{{ $message }}</p>
+                    <p class="product-create-help-text inline-fc23f87a8c">{{ $message }}</p>
                 @enderror
             </div>
 

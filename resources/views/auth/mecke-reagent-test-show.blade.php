@@ -5,287 +5,7 @@
 @section('breadcrumb', 'Mecke Reagent Test')
 
 @section('content')
-<style>
-    .mecke-test-page {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 0;
-    }
 
-    .mecke-header {
-        background: linear-gradient(135deg, #0d5b7c 0%, #1a7a99 100%);
-        color: white;
-        padding: 32px 24px;
-        border-bottom: 3px solid #2a9db8;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px 8px 0 0;
-    }
-
-    .mecke-header h1 {
-        font-size: 32px;
-        margin-bottom: 8px;
-        font-weight: 600;
-    }
-
-    .mecke-header p {
-        font-size: 16px;
-        opacity: 0.9;
-        margin: 0;
-    }
-
-    .mecke-section {
-        background-color: #ffffff;
-        border-radius: 8px;
-        padding: 32px;
-        margin-bottom: 32px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        border: 1px solid #e0e0e0;
-    }
-
-    .mecke-section h2 {
-        color: #0d5b7c;
-        font-size: 24px;
-        margin-bottom: 16px;
-        padding-bottom: 16px;
-        border-bottom: 2px solid #2a9db8;
-    }
-
-    .mecke-section h3 {
-        color: #1a7a99;
-        font-size: 18px;
-        margin-top: 16px;
-        margin-bottom: 12px;
-        font-weight: 600;
-    }
-
-    .mecke-section p {
-        color: #666666;
-        line-height: 1.8;
-        margin-bottom: 16px;
-        font-size: 15px;
-    }
-
-    .info-box {
-        background-color: #f0f9fb;
-        border-left: 4px solid #2a9db8;
-        padding: 16px;
-        border-radius: 6px;
-        margin-bottom: 16px;
-    }
-
-    .info-box.warning {
-        background-color: #fef3c7;
-        border-left-color: #f59e0b;
-    }
-
-    .info-box.danger {
-        background-color: #fee2e2;
-        border-left-color: #dc2626;
-    }
-
-    .info-box.success {
-        background-color: #dcfce7;
-        border-left-color: #22c55e;
-    }
-
-    .info-box strong {
-        color: #1a1a1a;
-        display: block;
-        margin-bottom: 8px;
-        font-size: 16px;
-    }
-
-    .info-box p {
-        margin: 0;
-        font-size: 14px;
-        color: #333333;
-    }
-
-    .mecke-section ul,
-    .mecke-section ol {
-        margin-left: 16px;
-        margin-bottom: 16px;
-    }
-
-    .mecke-section li {
-        margin-bottom: 12px;
-        color: #666666;
-        line-height: 1.7;
-    }
-
-    .steps-container {
-        display: grid;
-        gap: 16px;
-        margin-bottom: 16px;
-    }
-
-    .step {
-        display: flex;
-        gap: 16px;
-        padding: 16px;
-        background-color: #f5f5f5;
-        border-radius: 6px;
-        border: 1px solid #e0e0e0;
-    }
-
-    .step-number {
-        background: linear-gradient(135deg, #1a7a99 0%, #2a9db8 100%);
-        color: white;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-        flex-shrink: 0;
-        font-size: 18px;
-    }
-
-    .step-content h4 {
-        color: #0d5b7c;
-        font-size: 16px;
-        margin-bottom: 8px;
-        font-weight: 600;
-        margin: 0 0 8px 0;
-    }
-
-    .step-content p {
-        margin: 0;
-        font-size: 14px;
-        color: #666666;
-    }
-
-    .reaction-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 16px;
-    }
-
-    .reaction-table th {
-        background-color: #0d5b7c;
-        color: white;
-        padding: 16px;
-        text-align: left;
-        font-weight: 600;
-    }
-
-    .reaction-table td {
-        padding: 16px;
-        border-bottom: 1px solid #e0e0e0;
-    }
-
-    .reaction-table tr:hover {
-        background-color: #f5f5f5;
-    }
-
-    .color-swatch {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        border-radius: 4px;
-        border: 1px solid #999;
-        margin-right: 8px;
-        vertical-align: middle;
-    }
-
-    .comparison-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 16px;
-        margin-bottom: 16px;
-    }
-
-    .comparison-card {
-        background-color: #f5f5f5;
-        border: 1px solid #e0e0e0;
-        border-radius: 6px;
-        padding: 16px;
-    }
-
-    .comparison-card h4 {
-        color: #0d5b7c;
-        font-size: 16px;
-        margin: 0 0 12px 0;
-        font-weight: 600;
-    }
-
-    .comparison-card p {
-        margin: 0;
-        font-size: 14px;
-        color: #666666;
-        line-height: 1.6;
-    }
-
-    .disclaimer-section {
-        border: 2px solid #dc2626;
-        background-color: #fee2e2;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-        .mecke-header h1 {
-            font-size: 24px;
-        }
-
-        .mecke-header p {
-            font-size: 14px;
-        }
-
-        .mecke-section {
-            padding: 16px;
-        }
-
-        .mecke-section h2 {
-            font-size: 20px;
-        }
-
-        .step {
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .reaction-table {
-            font-size: 13px;
-        }
-
-        .reaction-table th,
-        .reaction-table td {
-            padding: 12px;
-        }
-
-        .comparison-grid {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .mecke-header h1 {
-            font-size: 20px;
-        }
-
-        .mecke-section {
-            padding: 12px;
-        }
-
-        .mecke-section h2 {
-            font-size: 18px;
-        }
-
-        .mecke-section h3 {
-            font-size: 16px;
-        }
-
-        .info-box {
-            padding: 12px;
-        }
-
-        .color-swatch {
-            width: 25px;
-            height: 25px;
-        }
-    }
-</style>
 
 <div class="mecke-test-page">
     <!-- Header -->
@@ -375,42 +95,42 @@
             <tbody>
                 <tr>
                     <td><strong>MDMA / Ecstasy</strong></td>
-                    <td><span class="color-swatch" style="background-color: #003300;"></span> Green → Emerald Green → Dark Green</td>
+                    <td><span class="color-swatch inline-447214812e"></span> Green → Emerald Green → Dark Green</td>
                     <td>Immediate to 30 seconds</td>
                 </tr>
                 <tr>
                     <td><strong>MDA</strong></td>
-                    <td><span class="color-swatch" style="background-color: #336633;"></span> Greenish-Brown → Dark Green</td>
+                    <td><span class="color-swatch inline-c552a9c471"></span> Greenish-Brown → Dark Green</td>
                     <td>Immediate, slower than MDMA</td>
                 </tr>
                 <tr>
                     <td><strong>Amphetamine</strong></td>
-                    <td><span class="color-swatch" style="background-color: #ffcc00;"></span> Yellow → Brown/No Color</td>
+                    <td><span class="color-swatch inline-44554e02b5"></span> Yellow → Brown/No Color</td>
                     <td>2-5 seconds</td>
                 </tr>
                 <tr>
                     <td><strong>Heroin / Diacetylmorphine</strong></td>
-                    <td><span class="color-swatch" style="background-color: #0066cc;"></span> Blue → Purple</td>
+                    <td><span class="color-swatch inline-9a89dce24a"></span> Blue → Purple</td>
                     <td>3-10 seconds</td>
                 </tr>
                 <tr>
                     <td><strong>Morphine</strong></td>
-                    <td><span class="color-swatch" style="background-color: #0099cc;"></span> Pale Blue → Light Blue</td>
+                    <td><span class="color-swatch inline-24b74278d5"></span> Pale Blue → Light Blue</td>
                     <td>Slow, develops over 10-20 seconds</td>
                 </tr>
                 <tr>
                     <td><strong>Codeine</strong></td>
-                    <td><span class="color-swatch" style="background-color: #6699ff;"></span> Light Blue → Gray</td>
+                    <td><span class="color-swatch inline-f10dbfd2b3"></span> Light Blue → Gray</td>
                     <td>5-15 seconds</td>
                 </tr>
                 <tr>
                     <td><strong>Methamphetamine</strong></td>
-                    <td><span class="color-swatch" style="background-color: #ff9900;"></span> Orange → Brown/Yellow</td>
+                    <td><span class="color-swatch inline-f10b6fb1a6"></span> Orange → Brown/Yellow</td>
                     <td>2-10 seconds</td>
                 </tr>
                 <tr>
                     <td><strong>LSD</strong></td>
-                    <td><span class="color-swatch" style="background-color: #cccccc;"></span> Colorless or faint brown</td>
+                    <td><span class="color-swatch inline-01ad74366b"></span> Colorless or faint brown</td>
                     <td>Slow or no reaction</td>
                 </tr>
                 <tr>
@@ -434,7 +154,7 @@
         <div class="comparison-grid">
             <div class="comparison-card">
                 <h4>✓ Advantages</h4>
-                <ul style="margin-left: 0; padding-left: 20px;">
+                <ul class="inline-9498057cb6">
                     <li>Excellent confirmatory test</li>
                     <li>Different colors from Marquis</li>
                     <li>Very good for opioid ID</li>
@@ -445,7 +165,7 @@
             </div>
             <div class="comparison-card">
                 <h4>✗ Limitations</h4>
-                <ul style="margin-left: 0; padding-left: 20px;">
+                <ul class="inline-9498057cb6">
                     <li>Slower reactions than Marquis</li>
                     <li>Requires careful observation</li>
                     <li>Cannot determine purity</li>

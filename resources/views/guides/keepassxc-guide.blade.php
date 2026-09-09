@@ -1,132 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<style>
-    :root {
-        --color-bg-primary: #fcfcf9;
-        --color-bg-secondary: #ffffff;
-        --color-text-primary: #134252;
-        --color-text-secondary: #626c71;
-        --color-border: #e8e8e6;
-        --color-accent: #208088;
-        --color-accent-light: #32b8c6;
-        --spacing-md: 16px;
-        --spacing-lg: 20px;
-        --spacing-xl: 24px;
-        --spacing-2xl: 32px;
-        --radius: 8px;
-    }
 
-    .guides-container {
-        max-width: 900px;
-        margin: var(--spacing-2xl) auto;
-        padding: var(--spacing-lg);
-    }
-
-    .guides-card {
-        background: var(--color-bg-secondary);
-        border-radius: var(--radius);
-        border: 1px solid var(--color-border);
-        padding: var(--spacing-2xl);
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    }
-
-    .guides-header {
-        border-bottom: 2px solid var(--color-accent);
-        padding-bottom: var(--spacing-lg);
-        margin-bottom: var(--spacing-xl);
-    }
-
-    .guides-title {
-        font-size: 2.5em;
-        font-weight: 600;
-        color: var(--color-text-primary);
-        margin-bottom: var(--spacing-md);
-    }
-
-    .guides-section-title {
-        font-size: 1.5em;
-        font-weight: 600;
-        color: var(--color-accent);
-        margin: var(--spacing-xl) 0 var(--spacing-md) 0;
-        border-left: 4px solid var(--color-accent);
-        padding-left: var(--spacing-md);
-    }
-
-    .guides-subtitle {
-        font-size: 1.2em;
-        font-weight: 500;
-        color: var(--color-text-primary);
-        margin: var(--spacing-lg) 0 var(--spacing-md) 0;
-    }
-
-    .guides-content p {
-        margin-bottom: var(--spacing-md);
-        color: var(--color-text-secondary);
-    }
-
-    .guides-list {
-        list-style: none;
-        padding-left: 0;
-        margin: var(--spacing-md) 0;
-    }
-
-    .guides-list li {
-        padding: 8px 0 8px 16px;
-        border-left: 3px solid var(--color-accent-light);
-        margin-bottom: 8px;
-        color: var(--color-text-secondary);
-    }
-
-    .guides-ordered-list {
-        list-style: decimal;
-        padding-left: 32px;
-        margin: var(--spacing-md) 0;
-    }
-
-    .guides-ordered-list li {
-        margin-bottom: var(--spacing-md);
-        color: var(--color-text-secondary);
-    }
-
-    .guides-highlight {
-        background: rgba(32, 128, 136, 0.08);
-        border-left: 4px solid var(--color-accent);
-        padding: var(--spacing-md);
-        border-radius: var(--radius);
-        margin: var(--spacing-md) 0;
-        color: var(--color-text-primary);
-        font-weight: 500;
-    }
-
-    .guides-code-block {
-        background: var(--color-bg-primary);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius);
-        padding: var(--spacing-md);
-        overflow-x: auto;
-        margin: var(--spacing-md) 0;
-    }
-
-    .guides-code-block pre {
-        margin: 0;
-        color: var(--color-text-primary);
-        font-family: 'Monaco', 'Courier New', monospace;
-        font-size: 0.9em;
-    }
-
-    .guides-divider {
-        border: none;
-        border-top: 1px solid var(--color-border);
-        margin: var(--spacing-xl) 0;
-    }
-</style>
 
 <div class="guides-container">
     <div class="guides-card">
         <div class="guides-header">
             <h1 class="guides-title">KeePassXC User Guide</h1>
-            <p style="color: var(--color-text-secondary); margin: 0;">Secure Password Management Made Easy</p>
+            <p class="inline-15f95d08d0">Secure Password Management Made Easy</p>
         </div>
 
         <div class="guides-content">
@@ -151,7 +32,7 @@
             <h3 class="guides-subtitle">Linux Installation</h3>
             <p>You have multiple options to install KeePassXC on Linux systems:</p>
 
-            <h4 style="font-weight: 500; color: var(--color-text-primary); margin-top: 16px;">AppImage Method</h4>
+            <h4 class="inline-2c140ee9ae">AppImage Method</h4>
             <ol class="guides-ordered-list">
                 <li>Go to <code>https://keepassxc.org/download/#linux</code></li>
                 <li>Download the AppImage version</li>
@@ -161,18 +42,18 @@
                 <li>Double-click the AppImage to launch it</li>
             </ol>
 
-            <h4 style="font-weight: 500; color: var(--color-text-primary); margin-top: 16px;">Flatpak Method</h4>
+            <h4 class="inline-2c140ee9ae">Flatpak Method</h4>
             <div class="guides-code-block">
                 <pre>flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install --user flathub org.keepassxc.KeePassXC</pre>
             </div>
 
-            <h4 style="font-weight: 500; color: var(--color-text-primary); margin-top: 16px;">Snap Method</h4>
+            <h4 class="inline-2c140ee9ae">Snap Method</h4>
             <div class="guides-code-block">
                 <pre>sudo snap install keepassxc</pre>
             </div>
 
-            <h4 style="font-weight: 500; color: var(--color-text-primary); margin-top: 16px;">Ubuntu PPA Method</h4>
+            <h4 class="inline-2c140ee9ae">Ubuntu PPA Method</h4>
             <div class="guides-code-block">
                 <pre>sudo add-apt-repository ppa:phoerious/keepassxc
 sudo apt update

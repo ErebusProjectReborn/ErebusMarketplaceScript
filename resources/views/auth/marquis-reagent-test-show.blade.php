@@ -5,306 +5,7 @@
 @section('breadcrumb', 'Marquis Reagent Test')
 
 @section('content')
-<style>
-    .marquis-test-page {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 0;
-    }
 
-    .marquis-header {
-        background: linear-gradient(135deg, #0d5b7c 0%, #1a7a99 100%);
-        color: white;
-        padding: 32px 24px;
-        border-bottom: 3px solid #2a9db8;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px 8px 0 0;
-    }
-
-    .marquis-header h1 {
-        font-size: 32px;
-        margin-bottom: 8px;
-        font-weight: 600;
-    }
-
-    .marquis-header p {
-        font-size: 16px;
-        opacity: 0.9;
-        margin: 0;
-    }
-
-    .marquis-section {
-        background-color: #ffffff;
-        border-radius: 8px;
-        padding: 32px;
-        margin-bottom: 32px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        border: 1px solid #e0e0e0;
-    }
-
-    .marquis-section h2 {
-        color: #0d5b7c;
-        font-size: 24px;
-        margin-bottom: 16px;
-        padding-bottom: 16px;
-        border-bottom: 2px solid #2a9db8;
-    }
-
-    .marquis-section h3 {
-        color: #1a7a99;
-        font-size: 18px;
-        margin-top: 16px;
-        margin-bottom: 12px;
-        font-weight: 600;
-    }
-
-    .marquis-section p {
-        color: #666666;
-        line-height: 1.8;
-        margin-bottom: 16px;
-        font-size: 15px;
-    }
-
-    .info-box {
-        background-color: #f0f9fb;
-        border-left: 4px solid #2a9db8;
-        padding: 16px;
-        border-radius: 6px;
-        margin-bottom: 16px;
-    }
-
-    .info-box.warning {
-        background-color: #fef3c7;
-        border-left-color: #f59e0b;
-    }
-
-    .info-box.danger {
-        background-color: #fee2e2;
-        border-left-color: #dc2626;
-    }
-
-    .info-box.success {
-        background-color: #dcfce7;
-        border-left-color: #22c55e;
-    }
-
-    .info-box strong {
-        color: #1a1a1a;
-        display: block;
-        margin-bottom: 8px;
-        font-size: 16px;
-    }
-
-    .info-box p {
-        margin: 0;
-        font-size: 14px;
-        color: #333333;
-    }
-
-    .marquis-section ul,
-    .marquis-section ol {
-        margin-left: 16px;
-        margin-bottom: 16px;
-    }
-
-    .marquis-section li {
-        margin-bottom: 12px;
-        color: #666666;
-        line-height: 1.7;
-    }
-
-    .steps-container {
-        display: grid;
-        gap: 16px;
-        margin-bottom: 16px;
-    }
-
-    .step {
-        display: flex;
-        gap: 16px;
-        padding: 16px;
-        background-color: #f5f5f5;
-        border-radius: 6px;
-        border: 1px solid #e0e0e0;
-    }
-
-    .step-number {
-        background: linear-gradient(135deg, #1a7a99 0%, #2a9db8 100%);
-        color: white;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-        flex-shrink: 0;
-        font-size: 18px;
-    }
-
-    .step-content h4 {
-        color: #0d5b7c;
-        font-size: 16px;
-        margin-bottom: 8px;
-        font-weight: 600;
-        margin: 0 0 8px 0;
-    }
-
-    .step-content p {
-        margin: 0;
-        font-size: 14px;
-        color: #666666;
-    }
-
-    .color-reaction-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 16px;
-    }
-
-    .color-reaction-table th {
-        background-color: #0d5b7c;
-        color: white;
-        padding: 16px;
-        text-align: left;
-        font-weight: 600;
-    }
-
-    .color-reaction-table td {
-        padding: 16px;
-        border-bottom: 1px solid #e0e0e0;
-    }
-
-    .color-reaction-table tr:hover {
-        background-color: #f5f5f5;
-    }
-
-    .color-swatch {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        border-radius: 4px;
-        border: 1px solid #999;
-        margin-right: 8px;
-        vertical-align: middle;
-    }
-
-    .safety-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 16px;
-        margin-bottom: 16px;
-    }
-
-    .safety-card {
-        background-color: #f5f5f5;
-        border: 1px solid #e0e0e0;
-        border-radius: 6px;
-        padding: 16px;
-    }
-
-    .safety-card h4 {
-        color: #0d5b7c;
-        font-size: 16px;
-        margin: 0 0 12px 0;
-        font-weight: 600;
-    }
-
-    .safety-card p {
-        margin: 0;
-        font-size: 14px;
-        color: #666666;
-        line-height: 1.6;
-    }
-
-    .comparison-section {
-        background-color: #f0f9fb;
-        border-radius: 6px;
-        padding: 20px;
-        margin-bottom: 16px;
-    }
-
-    .comparison-section h4 {
-        color: #0d5b7c;
-        font-size: 16px;
-        margin-bottom: 12px;
-        font-weight: 600;
-    }
-
-    .comparison-section ul {
-        margin-left: 16px;
-        margin-bottom: 0;
-    }
-
-    .disclaimer-section {
-        border: 2px solid #dc2626;
-        background-color: #fee2e2;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-        .marquis-header h1 {
-            font-size: 24px;
-        }
-
-        .marquis-header p {
-            font-size: 14px;
-        }
-
-        .marquis-section {
-            padding: 16px;
-        }
-
-        .marquis-section h2 {
-            font-size: 20px;
-        }
-
-        .step {
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .color-reaction-table {
-            font-size: 13px;
-        }
-
-        .color-reaction-table th,
-        .color-reaction-table td {
-            padding: 12px;
-        }
-
-        .safety-grid {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .marquis-header h1 {
-            font-size: 20px;
-        }
-
-        .marquis-section {
-            padding: 12px;
-        }
-
-        .marquis-section h2 {
-            font-size: 18px;
-        }
-
-        .marquis-section h3 {
-            font-size: 16px;
-        }
-
-        .info-box {
-            padding: 12px;
-        }
-
-        .color-swatch {
-            width: 25px;
-            height: 25px;
-        }
-    }
-</style>
 
 <div class="marquis-test-page">
     <!-- Header -->
@@ -394,52 +95,52 @@
             <tbody>
                 <tr>
                     <td><strong>MDMA / Ecstasy</strong></td>
-                    <td><span class="color-swatch" style="background-color: #4a0000;"></span> Black → Dark Purple/Brown</td>
+                    <td><span class="color-swatch inline-6f1ce402a1"></span> Black → Dark Purple/Brown</td>
                     <td>Immediate to 5 seconds</td>
                 </tr>
                 <tr>
                     <td><strong>MDA (Tenamfetamine)</strong></td>
-                    <td><span class="color-swatch" style="background-color: #4a2020;"></span> Black → Dark Brown</td>
+                    <td><span class="color-swatch inline-fe9875d764"></span> Black → Dark Brown</td>
                     <td>Immediate to 10 seconds</td>
                 </tr>
                 <tr>
                     <td><strong>Amphetamine</strong></td>
-                    <td><span class="color-swatch" style="background-color: #ff9900;"></span> Orange → Brown/Black</td>
+                    <td><span class="color-swatch inline-f10b6fb1a6"></span> Orange → Brown/Black</td>
                     <td>2-5 seconds</td>
                 </tr>
                 <tr>
                     <td><strong>Methamphetamine</strong></td>
-                    <td><span class="color-swatch" style="background-color: #ffcc00;"></span> Yellow → Brown</td>
+                    <td><span class="color-swatch inline-44554e02b5"></span> Yellow → Brown</td>
                     <td>3-10 seconds</td>
                 </tr>
                 <tr>
                     <td><strong>Heroin</strong></td>
-                    <td><span class="color-swatch" style="background-color: #ff6b9d;"></span> Brown → Purple/Blue</td>
+                    <td><span class="color-swatch inline-610fb78b0b"></span> Brown → Purple/Blue</td>
                     <td>3-10 seconds</td>
                 </tr>
                 <tr>
                     <td><strong>Morphine</strong></td>
-                    <td><span class="color-swatch" style="background-color: #cccccc;"></span> White → Brown</td>
+                    <td><span class="color-swatch inline-01ad74366b"></span> White → Brown</td>
                     <td>5-15 seconds</td>
                 </tr>
                 <tr>
                     <td><strong>Mescaline (Peyote/Cacti)</strong></td>
-                    <td><span class="color-swatch" style="background-color: #ff3333;"></span> Red → Brown</td>
+                    <td><span class="color-swatch inline-6e3e23340f"></span> Red → Brown</td>
                     <td>1-2 seconds</td>
                 </tr>
                 <tr>
                     <td><strong>DOB (Bromo-Dragonfly)</strong></td>
-                    <td><span class="color-swatch" style="background-color: #00aa00;"></span> Green → Yellow → Brown</td>
+                    <td><span class="color-swatch inline-14e38c6baa"></span> Green → Yellow → Brown</td>
                     <td>1-3 seconds</td>
                 </tr>
                 <tr>
                     <td><strong>Fentanyl</strong></td>
-                    <td><span class="color-swatch" style="background-color: #ffff99;"></span> Pale Yellow → Orange</td>
+                    <td><span class="color-swatch inline-77b229898d"></span> Pale Yellow → Orange</td>
                     <td>Slow, develops over 10-30 seconds</td>
                 </tr>
                 <tr>
                     <td><strong>LSD / Acid</strong></td>
-                    <td><span class="color-swatch" style="background-color: #ffcc99;"></span> Orange/Tan → Brown</td>
+                    <td><span class="color-swatch inline-2a005e41e8"></span> Orange/Tan → Brown</td>
                     <td>5-10 seconds</td>
                 </tr>
                 <tr>
@@ -463,7 +164,7 @@
         <div class="safety-grid">
             <div class="safety-card">
                 <h4>✓ Advantages</h4>
-                <ul style="margin-left: 0; padding-left: 20px;">
+                <ul class="inline-9498057cb6">
                     <li>Very fast results</li>
                     <li>Inexpensive per test</li>
                     <li>Easy to carry and use</li>
@@ -474,7 +175,7 @@
             </div>
             <div class="safety-card">
                 <h4>✗ Limitations</h4>
-                <ul style="margin-left: 0; padding-left: 20px;">
+                <ul class="inline-9498057cb6">
                     <li>Color matching is subjective</li>
                     <li>Cannot determine purity</li>
                     <li>Cannot detect all substances</li>

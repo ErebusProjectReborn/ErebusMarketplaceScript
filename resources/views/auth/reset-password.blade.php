@@ -5,157 +5,7 @@
 
 @section('content')
 
-<style>
-:root {
---color-primary: #1a7a99;
---color-primary-light: #2a9db8;
---color-text-primary: #333333;
---color-text-secondary: #666666;
---color-bg-primary: #f5f5f5;
---color-bg-secondary: #ffffff;
---color-border: #e0e0e0;
---color-error: #dc2626;
---spacing-sm: 8px;
---spacing-md: 12px;
---spacing-lg: 16px;
---spacing-xl: 24px;
---radius-md: 6px;
---radius-lg: 8px;
-}
 
-.auth-reset-container {
-width: 100%;
-max-width: 500px;
-}
-
-.auth-reset-card {
-background-color: var(--color-bg-secondary);
-border: 1px solid var(--color-border);
-border-radius: var(--radius-lg);
-padding: var(--spacing-2xl);
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-
-.auth-reset-title {
-font-size: 22px;
-font-weight: 600;
-color: var(--color-text-primary);
-margin: 0 0 var(--spacing-xl) 0;
-text-align: center;
-}
-
-.auth-reset-form {
-display: flex;
-flex-direction: column;
-gap: var(--spacing-lg);
-}
-
-.auth-reset-form-group {
-display: flex;
-flex-direction: column;
-}
-
-.auth-reset-label {
-font-size: 13px;
-font-weight: 600;
-color: var(--color-text-primary);
-margin-bottom: var(--spacing-sm);
-text-transform: uppercase;
-letter-spacing: 0.5px;
-}
-
-.auth-reset-input {
-padding: var(--spacing-md) var(--spacing-lg);
-font-size: 14px;
-border: 1px solid var(--color-border);
-border-radius: var(--radius-md);
-background-color: var(--color-bg-primary);
-color: var(--color-text-primary);
-transition: border-color 0.2s ease;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-}
-
-.auth-reset-input:focus {
-outline: none;
-border-color: var(--color-primary);
-background-color: var(--color-bg-secondary);
-}
-
-.auth-reset-button {
-padding: var(--spacing-md) var(--spacing-lg);
-background-color: var(--color-primary);
-color: white;
-border: none;
-border-radius: var(--radius-md);
-font-size: 14px;
-font-weight: 600;
-cursor: pointer;
-transition: all 0.2s ease;
-text-transform: uppercase;
-letter-spacing: 0.5px;
-}
-
-.auth-reset-button:hover {
-background-color: var(--color-primary-light);
-}
-
-.auth-reset-button:active {
-transform: scale(0.98);
-}
-
-.auth-reset-links {
-display: flex;
-justify-content: center;
-gap: var(--spacing-lg);
-margin-top: var(--spacing-xl);
-font-size: 13px;
-}
-
-.auth-reset-link {
-color: var(--color-primary);
-text-decoration: none;
-transition: color 0.2s ease;
-}
-
-.auth-reset-link:hover {
-color: var(--color-primary-light);
-text-decoration: underline;
-}
-
-.auth-reset-error {
-background-color: #fee2e2;
-border: 1px solid #fecaca;
-border-left: 4px solid var(--color-error);
-border-radius: var(--radius-md);
-padding: var(--spacing-lg);
-margin-bottom: var(--spacing-lg);
-font-size: 13px;
-color: #7f1d1d;
-line-height: 1.6;
-}
-
-.auth-reset-success {
-background-color: #dcfce7;
-border: 1px solid #bbf7d0;
-border-left: 4px solid #16a34a;
-border-radius: var(--radius-md);
-padding: var(--spacing-lg);
-margin-bottom: var(--spacing-lg);
-font-size: 13px;
-color: #15803d;
-line-height: 1.6;
-}
-
-@media (max-width: 640px) {
-.auth-reset-card {
-padding: var(--spacing-xl);
-}
-
-.auth-reset-title {
-font-size: 18px;
-}
-}
-</style>
 
 <div class="auth-reset-container">
 <div class="auth-reset-card">
@@ -198,7 +48,7 @@ required
 autofocus
 >
 @error('username')
-<small style="color: var(--color-error); margin-top: 4px;">{{ $message }}</small>
+<small class="inline-194006b2fc">{{ $message }}</small>
 @enderror
 </div>
 
@@ -216,7 +66,7 @@ maxlength="40"
 required
 >
 @error('password')
-<small style="color: var(--color-error); margin-top: 4px;">{{ $message }}</small>
+<small class="inline-194006b2fc">{{ $message }}</small>
 @enderror
 </div>
 
@@ -234,7 +84,7 @@ maxlength="40"
 required
 >
 @error('password_confirmation')
-<small style="color: var(--color-error); margin-top: 4px;">{{ $message }}</small>
+<small class="inline-194006b2fc">{{ $message }}</small>
 @enderror
 </div>
 

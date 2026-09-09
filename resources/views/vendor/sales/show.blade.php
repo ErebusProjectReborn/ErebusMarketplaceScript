@@ -1,238 +1,8 @@
 @extends('layouts.app')
+<link rel="stylesheet" href="{{ asset('css/vendor.css') }}">
 @section('content')
 
-<style>
-    :root {
-        --color-accent: #208088;
-        --color-accent-light: #32b8c6;
-        --color-text-primary: #134252;
-        --color-text-secondary: #62746e;
-        --color-card-bg: #ffffff;
-        --color-border: #d4d8d6;
-        --color-input-bg: #f5f7f6;
-        --spacing-md: 12px;
-        --spacing-lg: 16px;
-        --spacing-xl: 24px;
-        --radius-base: 8px;
-        --radius-lg: 12px;
-        --color-success: #4caf50;
-        --color-warning: #ffc107;
-        --color-error: #f44336;
-        --color-info: #2196f3;
-    }
 
-    .sales-show-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: var(--spacing-xl);
-    }
-
-    .sales-show-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: var(--spacing-xl);
-    }
-
-    .sales-show-title {
-        font-size: 28px;
-        font-weight: 600;
-        color: var(--color-text-primary);
-        margin: 0;
-    }
-
-    .sales-show-id {
-        font-size: 14px;
-        color: var(--color-text-secondary);
-    }
-
-    .sales-show-card {
-        background: var(--color-card-bg);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-lg);
-        padding: var(--spacing-xl);
-        margin-bottom: var(--spacing-lg);
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    }
-
-    .sales-show-status-title {
-        font-size: 18px;
-        font-weight: 600;
-        color: var(--color-text-primary);
-        margin: 0 0 var(--spacing-lg) 0;
-    }
-
-    .timeline {
-        display: flex;
-        justify-content: space-between;
-        margin: var(--spacing-xl) 0;
-        position: relative;
-    }
-
-    .timeline::before {
-        content: '';
-        position: absolute;
-        top: 20px;
-        left: 0;
-        right: 0;
-        height: 2px;
-        background: var(--color-border);
-    }
-
-    .timeline-step {
-        flex: 1;
-        text-align: center;
-        position: relative;
-    }
-
-    .timeline-step-number {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background: var(--color-input-bg);
-        border: 2px solid var(--color-border);
-        font-weight: 600;
-        color: var(--color-text-primary);
-        margin-bottom: var(--spacing-md);
-        position: relative;
-        z-index: 1;
-    }
-
-    .timeline-step.active .timeline-step-number {
-        background: var(--color-accent);
-        color: white;
-        border-color: var(--color-accent);
-    }
-
-    .timeline-step-label {
-        font-size: 13px;
-        font-weight: 500;
-        color: var(--color-text-primary);
-        margin-bottom: var(--spacing-md);
-    }
-
-    .timeline-step-date {
-        font-size: 12px;
-        color: var(--color-text-secondary);
-    }
-
-    .delivery-form {
-        background: var(--color-input-bg);
-        padding: var(--spacing-lg);
-        border-radius: var(--radius-base);
-        margin: var(--spacing-lg) 0;
-    }
-
-    .delivery-label {
-        display: block;
-        font-size: 14px;
-        font-weight: 500;
-        color: var(--color-text-primary);
-        margin-bottom: var(--spacing-md);
-    }
-
-    .delivery-textarea {
-        width: 100%;
-        padding: var(--spacing-md);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-base);
-        font-family: inherit;
-        font-size: 14px;
-        color: var(--color-text-primary);
-        margin-bottom: var(--spacing-md);
-    }
-
-    .sales-action-btn {
-        display: inline-block;
-        background: var(--color-accent);
-        color: white;
-        padding: 10px 16px;
-        border-radius: var(--radius-base);
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 13px;
-        border: none;
-        cursor: pointer;
-        transition: background 0.2s ease;
-    }
-
-    .sales-action-btn:hover {
-        background: var(--color-accent-light);
-    }
-
-    .sales-action-btn-cancel {
-        background: var(--color-error);
-    }
-
-    .sales-action-btn-cancel:hover {
-        background: #d32f2f;
-    }
-
-    .dispute-card {
-        background: rgba(244, 67, 54, 0.05);
-        border: 1px solid rgba(244, 67, 54, 0.2);
-        padding: var(--spacing-lg);
-        border-radius: var(--radius-base);
-        margin-top: var(--spacing-lg);
-    }
-
-    .dispute-title {
-        font-size: 16px;
-        font-weight: 600;
-        color: var(--color-error);
-        margin: 0 0 var(--spacing-md) 0;
-    }
-
-    .dispute-status {
-        display: inline-block;
-        background: rgba(244, 67, 54, 0.1);
-        color: var(--color-error);
-        padding: 4px 12px;
-        border-radius: var(--radius-base);
-        font-size: 12px;
-        font-weight: 600;
-        margin-bottom: var(--spacing-md);
-    }
-
-    .auto-cancel-notice {
-        background: rgba(255, 193, 7, 0.1);
-        border: 1px solid rgba(255, 193, 7, 0.2);
-        padding: var(--spacing-lg);
-        border-radius: var(--radius-base);
-        color: #f57f17;
-        font-size: 13px;
-        line-height: 1.6;
-        margin-bottom: var(--spacing-lg);
-    }
-
-    @media (max-width: 768px) {
-        .sales-show-container {
-            padding: var(--spacing-lg);
-        }
-
-        .timeline {
-            flex-direction: column;
-        }
-
-        .timeline::before {
-            left: 20px;
-            top: 0;
-            height: auto;
-        }
-
-        .timeline-step {
-            text-align: left;
-            margin-bottom: var(--spacing-lg);
-        }
-
-        .timeline-step-number {
-            margin-right: var(--spacing-md);
-        }
-    }
-</style>
 
 <div class="sales-show-container">
     <div class="sales-show-header">
@@ -289,10 +59,10 @@
                 
                 @foreach($sale->items as $item)
                     @if($item->product)
-                        <div style="margin-bottom: var(--spacing-lg);">
+                        <div class="inline-c090b8915f">
                             <label class="delivery-label">
                                 <strong>{{ $item->product_name }}</strong>
-                                <br><span style="font-size: 12px; color: var(--color-text-secondary);">Enter delivery details (e.g., GPS coordinates, a website link, or cargo tracking number)</span>
+                                <br><span class="inline-0c2cda0f1f">Enter delivery details (e.g., GPS coordinates, a website link, or cargo tracking number)</span>
                             </label>
                             <textarea 
                                 name="delivery_text[{{ $item->product_id }}]" 
@@ -309,14 +79,14 @@
                 <button type="submit" class="sales-action-btn">Update Delivery Information</button>
             </form>
 
-            <form action="{{ route('orders.mark-sent', $sale->unique_url) }}" method="POST" style="display: inline;">
+            <form action="{{ route('orders.mark-sent', $sale->unique_url) }}" method="POST inline-434fc32ec2">
                 @csrf
                 <button type="submit" class="sales-action-btn">Deliver Products</button>
             </form>
         @endif
 
         @if($sale->status !== 'completed' && $sale->status !== 'cancelled' && !$sale->dispute)
-            <form action="{{ route('orders.mark-cancelled', $sale->unique_url) }}" method="POST" style="display: inline;">
+            <form action="{{ route('orders.mark-cancelled', $sale->unique_url) }}" method="POST inline-434fc32ec2">
                 @csrf
                 <button type="submit" class="sales-action-btn sales-action-btn-cancel">Cancel Sale</button>
             </form>

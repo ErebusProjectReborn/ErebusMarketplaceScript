@@ -1,278 +1,8 @@
 @extends('layouts.app')
+<link rel="stylesheet" href="{{ asset('css/vendor.css') }}">
 @section('content')
 
-<style>
-    :root {
-        --color-accent: #208088;
-        --color-accent-light: #32b8c6;
-        --color-text-primary: #134252;
-        --color-text-secondary: #62746e;
-        --color-card-bg: #ffffff;
-        --color-border: #d4d8d6;
-        --color-input-bg: #f5f7f6;
-        --spacing-md: 12px;
-        --spacing-lg: 16px;
-        --spacing-xl: 24px;
-        --radius-base: 8px;
-        --radius-lg: 12px;
-        --color-success: #4caf50;
-        --color-warning: #ffc107;
-        --color-error: #f44336;
-        --color-info: #2196f3;
-    }
 
-    .product-edit-container {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: var(--spacing-xl);
-    }
-
-    .product-edit-card {
-        background: var(--color-card-bg);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-lg);
-        padding: var(--spacing-xl);
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    }
-
-    .product-edit-title {
-        font-size: 24px;
-        font-weight: 600;
-        color: var(--color-text-primary);
-        margin: 0 0 var(--spacing-xl) 0;
-    }
-
-    .product-edit-section {
-        margin-bottom: var(--spacing-xl);
-        padding-bottom: var(--spacing-xl);
-        border-bottom: 1px solid var(--color-border);
-    }
-
-    .product-edit-section:last-child {
-        border-bottom: none;
-    }
-
-    .product-edit-section-title {
-        font-size: 16px;
-        font-weight: 600;
-        color: var(--color-text-primary);
-        margin: 0 0 var(--spacing-lg) 0;
-    }
-
-    .visibility-toggle-group {
-        background: var(--color-input-bg);
-        padding: var(--spacing-lg);
-        border-radius: var(--radius-base);
-        margin-bottom: var(--spacing-lg);
-    }
-
-    .visibility-toggle-label {
-        display: flex;
-        align-items: center;
-        gap: var(--spacing-md);
-        font-size: 14px;
-        font-weight: 500;
-        color: var(--color-text-primary);
-        margin-bottom: var(--spacing-md);
-    }
-
-    .visibility-toggle-input {
-        width: 50px;
-        height: 28px;
-        appearance: none;
-        background: var(--color-border);
-        border-radius: 14px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-        border: none;
-        position: relative;
-    }
-
-    .visibility-toggle-input:checked {
-        background: var(--color-accent);
-    }
-
-    .visibility-toggle-input:after {
-        content: '';
-        position: absolute;
-        width: 24px;
-        height: 24px;
-        background: white;
-        border-radius: 50%;
-        top: 2px;
-        left: 2px;
-        transition: left 0.3s ease;
-    }
-
-    .visibility-toggle-input:checked:after {
-        left: 24px;
-    }
-
-    .visibility-status {
-        font-size: 13px;
-        color: var(--color-text-secondary);
-        margin-top: var(--spacing-md);
-    }
-
-    .visibility-status.active {
-        color: var(--color-success);
-    }
-
-    .product-edit-field {
-        margin-bottom: var(--spacing-lg);
-    }
-
-    .product-edit-label {
-        display: block;
-        font-size: 14px;
-        font-weight: 500;
-        color: var(--color-text-primary);
-        margin-bottom: var(--spacing-md);
-    }
-
-    .product-edit-input,
-    .product-edit-select,
-    .product-edit-textarea {
-        width: 100%;
-        padding: var(--spacing-md);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-base);
-        font-family: inherit;
-        font-size: 14px;
-        color: var(--color-text-primary);
-        background: var(--color-input-bg);
-        transition: all 0.2s ease;
-        box-sizing: border-box;
-    }
-
-    .product-edit-input:focus,
-    .product-edit-select:focus,
-    .product-edit-textarea:focus {
-        outline: none;
-        border-color: var(--color-accent);
-        background: var(--color-card-bg);
-        box-shadow: 0 0 0 3px rgba(32, 128, 136, 0.1);
-    }
-
-    .product-edit-textarea {
-        resize: vertical;
-        min-height: 120px;
-    }
-
-    .product-edit-input:disabled {
-        background: var(--color-input-bg);
-        cursor: not-allowed;
-        opacity: 0.7;
-    }
-
-    .product-edit-price-wrapper {
-        display: flex;
-        align-items: center;
-        gap: var(--spacing-md);
-    }
-
-    .product-edit-price-symbol {
-        background: var(--color-input-bg);
-        padding: var(--spacing-md);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-base);
-        font-weight: 600;
-        color: var(--color-text-primary);
-        min-width: 40px;
-        text-align: center;
-    }
-
-    .product-edit-price-input {
-        flex: 1;
-    }
-
-    .product-photos-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: var(--spacing-lg);
-        margin-bottom: var(--spacing-lg);
-    }
-
-    .product-photo {
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-base);
-        overflow: hidden;
-        aspect-ratio: 1;
-    }
-
-    .product-photo img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .product-edit-submit-btn {
-        background: var(--color-accent);
-        color: white;
-        padding: 12px 24px;
-        border: none;
-        border-radius: var(--radius-base);
-        font-size: 14px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .product-edit-submit-btn:hover {
-        background: var(--color-accent-light);
-        box-shadow: 0 4px 12px rgba(32, 128, 136, 0.2);
-    }
-
-    .product-option-card {
-        background: var(--color-input-bg);
-        padding: var(--spacing-lg);
-        border-radius: var(--radius-base);
-        margin-bottom: var(--spacing-lg);
-        border: 1px solid var(--color-border);
-    }
-
-    .product-option-title {
-        font-size: 14px;
-        font-weight: 600;
-        color: var(--color-text-primary);
-        margin: 0 0 var(--spacing-md) 0;
-    }
-
-    .product-edit-help-text {
-        font-size: 12px;
-        color: var(--color-text-secondary);
-        margin-top: var(--spacing-md);
-    }
-
-    @media (max-width: 768px) {
-        .product-edit-container {
-            padding: var(--spacing-lg);
-        }
-
-        .product-edit-card {
-            padding: var(--spacing-lg);
-        }
-
-        .product-edit-title {
-            font-size: 20px;
-        }
-
-        .product-photos-container {
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        }
-
-        .product-edit-price-wrapper {
-            flex-direction: column;
-            align-items: stretch;
-        }
-
-        .product-edit-price-symbol {
-            min-width: auto;
-        }
-    }
-</style>
 
 <div class="product-edit-container">
     <div class="product-edit-card">
@@ -292,7 +22,7 @@
                     <div class="visibility-status {{ $product->active ? 'active' : '' }}">
                         {{ $product->active ? '✓ This product is visible to customers' : '✗ This product is hidden from customers' }}
                     </div>
-                    <p class="product-edit-help-text" style="margin-top: var(--spacing-md);">
+                    <p class="product-edit-help-text inline-125fc45c42">
                         When inactive, the product will be hidden from all marketplace listings.
                     </p>
                 </div>
@@ -385,7 +115,7 @@
                         @endforeach
                     </select>
                     @error('ships_from')
-                        <p class="product-edit-help-text" style="color: var(--color-error);">{{ $message }}</p>
+                        <p class="product-edit-help-text inline-fc23f87a8c">{{ $message }}</p>
                     @enderror
                 </div>
 
@@ -400,7 +130,7 @@
                         @endforeach
                     </select>
                     @error('ships_to')
-                        <p class="product-edit-help-text" style="color: var(--color-error);">{{ $message }}</p>
+                        <p class="product-edit-help-text inline-fc23f87a8c">{{ $message }}</p>
                     @enderror
                 </div>
             </div>
@@ -426,7 +156,7 @@
                     </div>
                 @endfor
                 @error('delivery_options')
-                    <p class="product-edit-help-text" style="color: var(--color-error);">{{ $message }}</p>
+                    <p class="product-edit-help-text inline-fc23f87a8c">{{ $message }}</p>
                 @enderror
             </div>
 

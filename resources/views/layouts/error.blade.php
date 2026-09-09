@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="{{ asset('css/errors.css') }}">
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
